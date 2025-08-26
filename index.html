@@ -42,43 +42,56 @@
   </div>
 
   <!-- Header -->
-  <div class="header">
-    <div class="container d-flex align-items-center">
-      <div class="logo me-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Placeholder_view_vector.svg" alt="Logo">
-      </div>
-      <div class="title">
-        <h1>Regional Institute of Planning, Applied Economics and Statistics (RIPAE&S)</h1>
-        <p>ଯୋଜନା, ପ୍ରୟୋଗମୂଳକ ଅର୍ଥନୀତି ଏବଂ ପରିସଙ୍ଖ୍ୟାନ ସ୍ଥାନୀୟ ପ୍ରତିଷ୍ଠାନ</p>
-      </div>
+ <!-- Header -->
+<div class="header">
+  <div class="container d-flex align-items-center">
+    <div class="logo me-3">
+      <img src="lg1.png" alt="Logo" style="height:50px;">
+    </div>
+    <div class="title">
+      <h1 class="h5 mb-0" >Regional Institute of Planning, Applied Economics and Statistics (RIPAE&S)</h1>
+      <p class="mb-0 small">ଯୋଜନା, ପ୍ରୟୋଗମୂଳକ ଅର୍ଥନୀତି ଏବଂ ପରିସଙ୍ଖ୍ୟାନ ସ୍ଥାନୀୟ ପ୍ରତିଷ୍ଠାନ</p>
     </div>
   </div>
+</div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Academic</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Programmes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Faculty & Staff</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Training Calendar</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Training List</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Tender</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Partnership</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">RTI</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-        </ul>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container d-flex justify-content-between">
+    
+    <!-- Logo stays left -->
+    <a class="navbar-brand d-lg-none" href="#">
+      <img src="lg1.png" alt="Logo" style="height:40px;">
+    </a>
+
+    <!-- Toggle button goes to right -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Academic</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Programmes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Faculty & Staff</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Training Calendar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Training List</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tender</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Partnership</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">RTI</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+<style>
+    
+</style>
 <!-- Hero Banner Section -->
 <section class="hero-banner">
   <div class="container">
@@ -109,7 +122,7 @@
       <div class="col-md-6 text-center mt-3">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" 
              alt="Training" 
-             class="img-fluid hero-img">
+             class="img-fluid hero-img btn-hero ">
       </div>
     </div>
   </div>
@@ -132,97 +145,253 @@
 </div>
 
 
-<section class="training-section container my-5">
-  <div class="row align-items-center">
+<style>
+   .layout-box {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  gap: 20px;
+  min-height: 100vh;         /* take full screen height */
+}
+
+
+    /* Profile Card */
+    .profile-card {
+      background: linear-gradient(135deg, #fff, #fbefff);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+      transition: transform 0.3s;
+      margin: 0 auto; /* center align */
     
-    <!-- LEFT: Profiles -->
-    <div class="col-lg-5">
-      <div class="profile-main text-center p-4 rounded-4 shadow-sm mb-4">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-img-main mb-3">
-        <h5 class="fw-bold">Shri Mohan Charan Majhi</h5>
-        <p class="text-muted">Hon'ble Chief Minister of Odisha</p>
-      </div>
+    }
 
-      <div class="profile-card d-flex align-items-center p-3 rounded-4 shadow-sm mb-3">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="profile-img-sm">
-        <div class="ms-3">
-          <h6 class="fw-semibold">Smt. Anu Garg, IAS</h6>
-          <p class="small text-orange m-0">Development Commissioner</p>
+    .profile-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px dashed #d46aff;
+      padding: 5px;
+    }
+
+    .profile-name {
+      margin: 15px 0 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .profile-title {
+      margin: 0;
+      color: #6a11cb;
+      font-size: 14px;
+    }
+
+    /* Official Card */
+    .official-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: linear-gradient(135deg, #fff, #fceeff);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 10px 0;
+      transition: background 0.3s;
+    }
+
+    .official-card:hover {
+      background: #f6dfff;
+    }
+
+    .official-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px dashed #ff6ad5;
+      padding: 3px;
+    }
+
+    .official-name {
+      margin: 0;
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .official-role {
+      font-size: 13px;
+      color: #6a11cb;
+    }
+
+    /* Calendar Box */
+    .calendar-box {
+      flex: 1 1 400px;
+      max-width: 500px;
+      background: linear-gradient(135deg, #e8eaff, #fbeeff);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 15px; /* spacing from top */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .calendar-title {
+      text-align: right;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .calendar-head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #991f45;
+      color: #fff;
+      padding: 8px;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .calendar-grid-box {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .calendar-day {
+      text-align: center;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
+
+    .calendar-day:hover {
+      background: #991f45;
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+    .calendar-day.active {
+      background: #991f45;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Event Item */
+    .event-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      margin: 15px auto;
+      max-width: 250px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      font-size: 14px;
+      transition: transform 0.3s;
+    }
+
+    .event-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .layout-box {
+        flex-direction: column;
+        align-items: center;
+      }
+      .calendar-box {
+        width: 100%;
+      }
+    }
+</style>
+
+<div class="layout-box  container">
+    <!-- Chief Minister -->
+    <div class="profile-card ">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="CM" class="profile-pic">
+      <h3 class="profile-name">Shri Mohan Charan Majhi</h3>
+      <p class="profile-title">Hon'ble Chief Minister of Odisha</p>
+    </div>
+
+    <!-- Officials -->
+    <div>
+      <div class="official-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Anu Garg" class="official-pic">
+        <div>
+          <h4 class="official-name">Smt. Anu Garg, IAS</h4>
+          <span class="official-role">Development Commissioner <br> cum-Additional Chief Secretary</span>
         </div>
       </div>
-
-      <div class="profile-card d-flex align-items-center p-3 rounded-4 shadow-sm mb-3">
-        <img src="https://randomuser.me/api/portraits/men/22.jpg" class="profile-img-sm">
-        <div class="ms-3">
-          <h6 class="fw-semibold">Shri T Ao, IAS</h6>
-          <p class="small text-orange m-0">Special Secretary</p>
+      <div class="official-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="T Ao" class="official-pic">
+        <div>
+          <h4 class="official-name">Shri T Ao, IAS</h4>
+          <span class="official-role">Special Secretary</span>
         </div>
       </div>
-
-      <div class="profile-card d-flex align-items-center p-3 rounded-4 shadow-sm">
-        <img src="https://randomuser.me/api/portraits/men/60.jpg" class="profile-img-sm">
-        <div class="ms-3">
-          <h6 class="fw-semibold">Dr. B. B. Nanda</h6>
-          <p class="small text-orange m-0">Director of RIPAES, Odisha</p>
+      <div class="official-card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="T Ao" class="official-pic">
+        <div>
+          <h4 class="official-name">Shri T Ao, IAS</h4>
+          <span class="official-role">Special Secretary</span>
         </div>
       </div>
     </div>
 
-    <!-- RIGHT: Calendar -->
-    <div class="col-lg-7">
-      <div class="calendar-box p-4 rounded-4 shadow">
-        <div class="calendar-header text-center mb-3">
-          <h5 class="fw-bold">Training Calendar</h5>
-          <p class="text-orange fw-semibold">April 2025</p>
-        </div>
-        <div class="calendar-grid">
-          <div class="day">01</div>
-          <div class="day">02</div>
-          <div class="day">03</div>
-          <div class="day">04</div>
-          <div class="day">05</div>
-          <div class="day">06</div>
-          <div class="day">07</div>
-          <div class="day">08</div>
-          <div class="day">09</div>
-          <div class="day">10</div>
-          <div class="day">11</div>
-          <div class="day">12</div>
-          <div class="day">13</div>
-          <div class="day">14</div>
-          <div class="day">15</div>
-          <div class="day">16</div>
-          <div class="day active" data-event="Workshop on Leadership">17</div>
-          <div class="day">18</div>
-          <div class="day">19</div>
-          <div class="day">20</div>
-          <div class="day">21</div>
-          <div class="day">22</div>
-          <div class="day">23</div>
-          <div class="day">24</div>
-          <div class="day">25</div>
-          <div class="day">26</div>
-          <div class="day">27</div>
-          <div class="day">28</div>
-          <div class="day">29</div>
-          <div class="day">30</div>
-        </div>
+    <!-- Calendar -->
+    <div class="calendar-box">
+      <h2 class="calendar-title">Training Calendar</h2>
+      <div class="calendar-head">April</div>
+      <div class="calendar-grid-box">
+        <div class="calendar-day">M</div>
+        <div class="calendar-day">T</div>
+        <div class="calendar-day">W</div>
+        <div class="calendar-day">T</div>
+        <div class="calendar-day">F</div>
+        <div class="calendar-day">S</div>
+        <div class="calendar-day">S</div>
 
-        <!-- Event Card -->
-        <div class="event-card mt-4 p-3 rounded-3 shadow-sm d-none" id="eventCard">
-          <div class="d-flex align-items-center">
-            <i class="bi bi-person-circle fs-3 text-orange"></i>
-            <div class="ms-2">
-              <h6 class="fw-bold m-0">Workshop</h6>
-              <small id="eventText">Event details here</small>
-            </div>
-            <i class="bi bi-check-circle-fill text-success ms-auto fs-4"></i>
-          </div>
-        </div>
+        <div class="calendar-day">01</div>
+        <div class="calendar-day">02</div>
+        <div class="calendar-day">03</div>
+        <div class="calendar-day">04</div>
+        <div class="calendar-day">05</div>
+        <div class="calendar-day">06</div>
+        <div class="calendar-day">07</div>
+
+        <div class="calendar-day">08</div>
+        <div class="calendar-day">09</div>
+        <div class="calendar-day">10</div>
+        <div class="calendar-day">11</div>
+        <div class="calendar-day">12</div>
+        <div class="calendar-day">13</div>
+        <div class="calendar-day">14</div>
+
+        <div class="calendar-day">15</div>
+        <div class="calendar-day">16</div>
+        <div class="calendar-day active">17</div>
+        <div class="calendar-day">18</div>
+        <div class="calendar-day">19</div>
+        <div class="calendar-day">20</div>
+        <div class="calendar-day">21</div>
+      </div>
+
+      <div class="event-card">
+        <p><strong>MONTH 17</strong><br>08:00 PM<br><span style="color:green;font-weight:bold;">AVAILABLE</span></p>
       </div>
     </div>
-  </div>
-</section>
+</div>
+
 
 
 <script>
@@ -235,72 +404,170 @@ document.querySelectorAll(".day").forEach(day=>{
 });
 </script>
 <!-- Proud Section -->
-<section class="py-5 proud-section">
-  <div class="container text-center">
+<!-- Proud Section -->
+<section class="py-5 bg-white text-center">
+  <div class="container">
     <!-- Heading -->
-    <h2 class="fw-bold display-6 mb-2 reveal fade-up">
-      WE ARE <span class="text-orange underline">PROUD</span>
-    </h2>
-    <p class="text-muted mb-5 reveal fade-up delay-1">
-      You don't have to struggle alone, you've got our assistance and help.
-    </p>
+  <style>
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
 
-    <!-- Cards Row -->
-    <div class="row g-4 justify-content-center">
-      <!-- Card 1 -->
-      <div class="col-md-2 col-6">
-        <div class="proud-card reveal zoom-in">
-          <div class="icon-box">
-            <i class="bi bi-journal-richtext"></i>
-          </div>
-          <h6 class="fw-bold">Ongoing Training <br> Programmes</h6>
-        </div>
-      </div>
+    h2 span {
+      color: #000;
+      font-weight: 900;
+    }
 
-      <!-- Card 2 -->
-      <div class="col-md-2 col-6">
-        <div class="proud-card reveal zoom-in delay-1">
-          <div class="icon-box">
-            <i class="bi bi-person-lines-fill"></i>
-          </div>
-          <h6 class="fw-bold">Training details</h6>
-        </div>
-      </div>
+    h2 strong {
+      color: #f4a100;
+      position: relative;
+    }
 
-      <!-- Card 3 -->
-      <div class="col-md-2 col-6">
-        <div class="proud-card reveal zoom-in delay-2">
-          <div class="icon-box">
-            <i class="bi bi-bar-chart-line"></i>
-          </div>
-          <h6 class="fw-bold">Number of Training <br> Sessions Conducted</h6>
-        </div>
-      </div>
+    h2 strong::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 8px;
+      background: #f4a100;
+      z-index: -1;
+      opacity: 0.5;
+    }
 
-      <!-- Card 4 -->
-      <div class="col-md-2 col-6">
-        <div class="proud-card reveal zoom-in delay-3">
-          <div class="icon-box">
-            <i class="bi bi-people-fill"></i>
-          </div>
-          <h6 class="fw-bold">Completed <br> Programmes</h6>
-        </div>
-      </div>
+    p {
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
 
-      <!-- Card 5 -->
-      <div class="col-md-2 col-6">
-        <div class="proud-card reveal zoom-in delay-4">
-          <div class="icon-box">
-            <i class="bi bi-clipboard-check"></i>
-          </div>
-          <h6 class="fw-bold">Upcoming <br> Programmes</h6>
-        </div>
-      </div>
+  </style>
+ <h2><span>WE ARE</span> <strong>PROUD</strong></h2>
+  <p>You don't have to struggle alone, you've got our assistance and help.</p>
+
+
+   <div class="row justify-content-center g-4">
+  
+  <!-- Card 1 -->
+  <div class="col-md-2 col-6">
+    <div class="custom-card position-relative animate__animated animate__fadeInUp">
+      <div class="corner-ribbon"></div>
+      <img src="pro1.jpg" class="img-fluid mb-3 card-img" alt="Ongoing">
+      <h6 class="fw-bold">Ongoing Training <br> Programmes</h6>
     </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col-md-2 col-6">
+    <div class="custom-card animate__animated animate__fadeInUp">
+      <img src="pro2.jpg" class="img-fluid mb-3 card-img" alt="Training">
+      <h6 class="fw-bold">Training details</h6>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-2 col-6">
+    <div class="custom-card animate__animated animate__fadeInUp">
+      <img src="pro4.jpg" class="img-fluid mb-3 card-img" alt="Sessions">
+      <h6 class="fw-bold">Number of Training <br> Sessions Conducted</h6>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="col-md-2 col-6">
+    <div class="custom-card animate__animated animate__fadeInUp">
+      <img src="pro4.jpg" class="img-fluid mb-3 card-img" alt="Completed">
+      <h6 class="fw-bold">Completed <br> Programmes</h6>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="col-md-2 col-6">
+    <div class="custom-card animate__animated animate__fadeInUp">
+      <img src="pro5.jpg" class="img-fluid mb-3 card-img" alt="Upcoming">
+      <h6 class="fw-bold">Upcoming <br> Programmes</h6>
+    </div>
+  </div>
+
+</div>
   </div>
 </section>
 
 <!-- CSS -->
+<style>
+.custom-card {
+  background: #f9f8fb;
+  border-radius: 20px;
+  padding: 40px 20px; /* inner spacing */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+
+  /* ✅ Fixed size for clean grid look */
+  height: 220px; 
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px; /* ✅ gap from all 4 sides */
+}
+
+.custom-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  border: 2px solid #f15a29; 
+}
+
+.card-img {
+  transition: transform 0.4s ease-in-out;
+  max-height: 80px; /* keeps images same size */
+  margin-bottom: 15px;
+}
+.custom-card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.corner-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 40px solid #f15a29;
+  border-right: 40px solid transparent;
+  border-radius: 10px 0 0 0;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+}
+/* Brush effect under PROUD */
+.proud-text::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: -8px;
+  width: 100%;
+  height: 12px;
+  background: #fbb034;
+  z-index: -1;
+  border-radius: 6px;
+}
+</style>
+
+<!-- Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<!-- Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 <!-- JS for Scroll Animation -->
@@ -320,94 +587,180 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <!-- Notices Section -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <!-- Header Row -->
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <!-- Tabs Left -->
-      <ul class="nav nav-pills" id="noticeTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="notices-tab" data-bs-toggle="tab" data-bs-target="#notices" type="button" role="tab">
-            Notices
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="circulars-tab" data-bs-toggle="tab" data-bs-target="#circulars" type="button" role="tab">
-            Circulars
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="tenders-tab" data-bs-toggle="tab" data-bs-target="#tenders" type="button" role="tab">
-            Tenders
-          </button>
-        </li>
-      </ul>
+ <!-- Bootstrap 5 JS (include before closing body tag) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Notices / Circulars / Tenders Section -->
+<!-- Tabs -->
+<div class="tabs container">
+  <button class="tab active" data-target="notices-container">Notices</button>
+  <button class="tab" data-target="circulars-container">Circulars</button>
+  <button class="tab" data-target="tender-container">Tender</button>
+  
+  <!-- Navigation Arrows -->
+  <div class="nav-buttons">
+    <button>&lt;</button>
+    <button>&gt;</button>
+  </div>
+</div>
 
-      <!-- Prev/Next Buttons Right -->
-      <div class="slider-controls">
-        <button class="btn btn-outline-danger me-2 prev-btn">&larr;</button>
-        <button class="btn btn-danger next-btn">&rarr;</button>
-      </div>
-    </div>
-
-    <!-- Tab Content -->
-    <div class="tab-content" id="noticeTabsContent">
-      <!-- Notices -->
-      <div class="tab-pane fade show active" id="notices" role="tabpanel">
-        <div class="notice-slider d-flex">
-          <div class="card notice-card animate__animated animate__fadeInUp">
-            <div class="card-body">
-              <h6 class="text-danger fw-bold">25/04/2025</h6>
-              <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sequi atque modi mollitia quam vero!</p>
-            </div>
-          </div>
-          <div class="card notice-card animate__animated animate__fadeInUp">
-            <div class="card-body">
-              <h6 class="text-danger fw-bold">18/04/2025</h6>
-              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ex vitae. Deserunt delectus quam placeat!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Circulars -->
-      <div class="tab-pane fade" id="circulars" role="tabpanel">
-        <div class="notice-slider d-flex">
-          <div class="card notice-card animate__animated animate__fadeInUp">
-            <div class="card-body">
-              <h6 class="text-danger fw-bold">20/04/2025</h6>
-              <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div class="card notice-card animate__animated animate__fadeInUp">
-            <div class="card-body">
-              <h6 class="text-danger fw-bold">15/04/2025</h6>
-              <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tenders -->
-      <div class="tab-pane fade" id="tenders" role="tabpanel">
-        <div class="notice-slider d-flex">
-          <div class="card notice-card animate__animated animate__fadeInUp">
-            <div class="card-body">
-              <h6 class="text-danger fw-bold">10/04/2025</h6>
-              <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div class="card notice-card animate__animated animate__fadeInUp">
-            <div class="card-body">
-              <h6 class="text-danger fw-bold">05/04/2025</h6>
-              <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Notices -->
+<div id="notices-container" class="tab-section container active">
+  <div class="notice-card">
+    <div class="notice-date">25/04/2025</div>
+    <div class="notice-text">
+      Notice Inviting Expression Of Interest (EOI) – Slitting & Rewinding Of Aluminium Coils...
     </div>
   </div>
-</section>
+  <div class="notice-card">
+    <div class="notice-date">18/04/2025</div>
+    <div class="notice-text">
+      Notice Inviting Expression Of Interest (EOI) – Slitting & Rewinding Of Aluminium Coils...
+    </div>
+  </div>
+</div>
+
+<!-- Circulars -->
+<div id="circulars-container" class="tab-section container">
+  <div class="notice-card">
+    <div class="notice-date">20/04/2025</div>
+    <div class="notice-text">
+      Circular regarding new policy updates and compliance instructions.
+    </div>
+  </div>
+</div>
+
+<!-- Tender -->
+<div id="tender-container" class="tab-section container">
+  <div class="notice-card">
+    <div class="notice-date">10/04/2025</div>
+    <div class="notice-text">
+      Tender invitation for supply of materials – submission deadline May 10, 2025.
+    </div>
+  </div>
+</div>
+
+<script>
+  // Support multiple tab groups independently
+  document.querySelectorAll(".tabs").forEach(tabsWrapper => {
+    const tabs = tabsWrapper.querySelectorAll(".tab");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        // remove active from only these tabs
+        tabs.forEach(t => t.classList.remove("active"));
+
+        // hide all sections connected to this tab group
+        document.querySelectorAll(".tab-section").forEach(section => {
+          section.classList.remove("active");
+        });
+
+        // activate clicked tab
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.target).classList.add("active");
+      });
+    });
+  });
+</script>
+
+<style>
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #f1f1f1;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .tab.active {
+    background: #a5033c;
+    color: #fff;
+  }
+
+  .tab-section {
+    display: none; /* hidden by default */
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .tab-section.active {
+    display: flex; /* show active one */
+  }
+
+  .notice-card {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+
+  .notice-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .notice-date {
+    color: #a5033c;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .notice-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  .nav-buttons button {
+    background: #a5033c;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .nav-buttons button:hover {
+    background: #80022e;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tab-section {
+      flex-direction: column;
+    }
+  }
+</style>
+
+
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <!-- Facilities Section -->
 <section class="py-5 bg-white facilities-section">
@@ -468,7 +821,54 @@ document.addEventListener("DOMContentLoaded", function() {
 </section>
 
 <!-- CSS -->
+<style>
+    .facility-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 220px; /* equal height */
+}
 
+.facility-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay styling */
+.facility-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6); /* dark shade for text visibility */
+  padding: 12px;
+  text-align: center;
+  opacity: 1; /* make sure it's visible */
+  transition: all 0.3s ease;
+}
+
+.facility-card .overlay h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Hover effect */
+.facility-card:hover img {
+  transform: scale(1.1);
+}
+
+.facility-card:hover .overlay {
+  background: rgba(0,0,0,0.8);
+}
+
+</style>
 <!-- Testimonial Section -->
 <section class="py-5 testimonial-section">
   <div class="container text-center">
@@ -483,7 +883,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="swiper-slide">
           <div class="testimonial-card wow fadeInUp" data-wow-delay="0.1s">
             <p class="testimonial-text">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur inventore eligendi, obcaecati at laudantium nobis.."
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta esse perspiciatis voluptatibus consequatur odio quasi ullam facere, exercitationem asperiores delectus nihil quaerat quae, assumenda necessitatibus architecto deleniti minus vero! "
             </p>
             <div class="d-flex align-items-center mt-4">
               <img src="person1.jpg" class="testimonial-img" alt="Harris">
@@ -499,7 +899,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="swiper-slide">
           <div class="testimonial-card wow fadeInUp" data-wow-delay="0.2s">
             <p class="testimonial-text">
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi ea, veniam esse nihil qui. "
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta esse perspiciatis voluptatibus consequatur odio quasi ullam facere, exercitationem asperiores delectus nihil quaerat quae, assumenda necessitatibus architecto deleniti minus vero! "
             </p>
             <div class="d-flex align-items-center mt-4">
               <img src="person2.jpg" class="testimonial-img" alt="Deepak">
@@ -693,8 +1093,8 @@ document.querySelectorAll('.tab-pane').forEach(pane => {
   <div class="footer-container">
     <!-- Left Section -->
     <div class="footer-left">
-      <img src="logo.png" alt="Logo" class="footer-logo" />
-      <h3>Regional Institute of Planning, Applied <br> Economics and Statistics (RIPAE&S)</h3>
+      <img src="lg1.png" alt="Logo" class="footer-logo" />
+      <h3 style="font-size: 15px; font-weight: bold;">Regional Institute of Planning, Applied <br> Economics and Statistics (RIPAE&S)</h3>
       <p>📍 A/65, Nayapalli, Bhubaneswar-12</p>
       <p>✉️ ripaesodisha[at]gmail[dot]com</p>
       <p>☎️ 0674-2392283</p>

@@ -332,49 +332,6 @@
 
 
 
-.proud-section {
-  background: #fff;
-}
-.text-orange {
-  color: #e86b34;
-}
-.underline {
-  position: relative;
-}
-.underline::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  background: #f9c49a;
-  bottom: -8px;
-  left: 0;
-  z-index: -1;
-  border-radius: 4px;
-}
-.proud-card {
-  background: #f9f9fb;
-  padding: 25px 15px;
-  border-radius: 20px;
-  transition: all 0.4s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-.proud-card:hover {
-  transform: translateY(-12px) scale(1.05);
-  background: #fff;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-.icon-box {
-  font-size: 45px;
-  color: #e86b34;
-  margin-bottom: 15px;
-  transition: all 0.4s ease;
-}
-.proud-card:hover .icon-box {
-  color: #28a745;
-  transform: rotate(12deg) scale(1.2);
-}
-
 /* ---------- Scroll Animations ---------- */
 .reveal {
   opacity: 0;
@@ -644,7 +601,7 @@
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
-  opacity: 0;
+ 
   transition: opacity 0.4s ease;
 }
 .gallery-card:hover .overlay {
